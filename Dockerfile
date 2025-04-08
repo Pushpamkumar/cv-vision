@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose Streamlit's default port
-EXPOSE 8501
+EXPOSE 8502
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "App.py", "--server.port=8501", "--server.enableCORS=false"]
+CMD ["streamlit", "run", "app/app.py", "--server.port=8502", "--server.enableCORS=false"]
